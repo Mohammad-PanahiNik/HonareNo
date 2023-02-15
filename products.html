@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            background-color: #ccc;
+        }
+        .products{
+            display: grid;
+            grid-template-areas:
+            "gb1 gb2 gb2 gb2"
+            "gb1 gb3 gb4 gb4"
+            "gb5 gb6 gb6 gb7"
+            "gb8 gb8 gb8 gb7"
+            ;
+            height: 600px;
+        }
+        .gridBoxs{
+            margin: 4px;
+            cursor: pointer;
+            transition: all ease 0.3s;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .gridBoxs:hover{
+            box-shadow: 0 0 8px;
+        }
+        .gb1{
+            background-color: red;
+            grid-area: gb1;
+        }
+        .gb2{
+            background-color: aqua;
+            grid-area: gb2;
+        }
+        .gb3{
+            background-color: teal;
+            grid-area: gb3;
+        }
+        .gb4{
+            background-color: cornflowerblue;
+            grid-area: gb4;
+        }
+        .gb5{
+            background-color: rgb(149, 189, 138);
+            grid-area: gb5;
+        }
+        .gb6{
+            background-color: cornflowerblue;
+            grid-area: gb6;
+        }
+        .gb7{
+            background-color: rgb(237, 100, 100);
+            grid-area: gb7;
+        }
+        .gb8{
+            background-color: rgb(155, 100, 237);
+            grid-area: gb8;
+        }
+        @media screen and (max-width:992px) {
+            .products{
+                height: 300px;
+            }
+        }
+        @media screen and (max-width:576px) {
+            .products{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+            .gridBoxs{
+                width: auto;
+                border-radius: 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .container{
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container products">
+        <div class="gridBoxs gb1">Lorem ipsum dolor sit amet </div>
+        <div class="gridBoxs gb2">Lorem ipsum dolor sit amet </div>
+        <div class="gridBoxs gb3">Lorem ipsum dolor sit amet </div>
+        <div class="gridBoxs gb4">Lorem ipsum dolor sit amet </div>
+        <div class="gridBoxs gb5">Lorem ipsum dolor sit amet </div>
+        <div class="gridBoxs gb6">Lorem ipsum dolor sit amet </div>
+        <div class="gridBoxs gb7">Lorem ipsum dolor sit amet </div>
+        <div class="gridBoxs gb8">Lorem ipsum dolor sit amet </div>
+    </section>
+</body>
+</html>
