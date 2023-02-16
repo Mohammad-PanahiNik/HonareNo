@@ -10,7 +10,6 @@
             margin: 0 ;
             padding: 0;
             box-sizing: border-box;
-            
         }
         body{ 
             display: flex;
@@ -23,8 +22,8 @@
             display: flex;
             justify-content: space-around;
             flex-direction: row;
-            border-radius:30px ;
-            padding: 30px 5px;
+            border-radius:12px ;
+            padding: 10px 5px;
         }
         .txt-box{
             display: flex;
@@ -34,7 +33,7 @@
             background-color:#FFFFFF ;
             border-radius: 15px;
             align-items:center;
-            
+            margin-left: 10px;
         }
         .txt-box p{
             text-align: justify;
@@ -42,7 +41,6 @@
             padding-top: 10px;
             font-size: 1.65rem;
             line-height: 2.5rem;
-            
         }
         .txt-box a{
             text-decoration: none;
@@ -54,25 +52,58 @@
             border-radius: 7px;
             margin: 20px;
         }
-        .img-box{
-            width: 55%;
-            margin-top: 30px;
-        }
-        .top-imgs{
+        .imgBoxSec3{
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-areas: 
+            "img1 img2 img2 img2"
+            "img3 img3 img3 img4"
+            ;
+            grid-template-columns: 200px 50px;
+            grid-template-rows: auto auto;
         }
-        .btm-imgs{
-            display: grid;
-            grid-template-columns: 2fr 1fr;
+        .imgSec3{
+            margin: 5px;
         }
-        .btm-imgs img ,.top-imgs img{
-            max-width: 100%;
-            background-color: #FFFFFF;
+        .imgSec3 img{
+          border-radius: 12px;
+          width: 100%;
+          height: 100%;
         }
-
-        @media screen and (max-width:992px){
-            
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+        }
+        .img3{
+            grid-area: img3;
+        }
+        .img4{
+            grid-area: img4;
+        }
+        @media screen and (max-width:1200px) {
+            .sec-3{
+                flex-direction: column;
+            }
+            .txt-box{
+                width: 100%;
+                text-align: right;
+            }
+            .imgBoxSec3{
+            grid-template-columns: 200px 50px;
+            grid-template-rows: 200px 200px;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .imgBoxSec3{
+                display: none;
+            }
+        }
+        @media screen and (max-width:568px) {
+            .sec-3{
+                width: auto;
+                border-radius: 0;
+            }
         }
     </style>
 </head>
@@ -82,16 +113,20 @@
             <p>به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن با</p>
             <a href="#">بیشتر !</a>
         </div>
-        <div class="img-box">
-            <div class="top-imgs">
-                <img src="Img/dwaeqe.png">
-                <img src="Img/dwaeqe.png">
+            <div class="imgBoxSec3">
+                <div class="imgSec3 img1">
+                    <img src="./Img/dwaeqe.png" alt="">
+                </div>
+                <div class="imgSec3 img2">
+                    <img src="./Img/dwaeqe.png" alt="">
+                </div>
+                <div class="imgSec3 img3">
+                    <img src="./Img/dwaeqe.png" alt="">
+                </div>
+                <div class="imgSec3 img4">
+                    <img src="./Img/dwaeqe.png" alt="">
+                </div>
             </div>
-            <div class="btm-imgs">
-                <img src="Img/dwaeqe.png">
-                <img src="Img/dwaeqe.png">
-            </div>
-        </div>
     </section>
 </body>
 </html>
