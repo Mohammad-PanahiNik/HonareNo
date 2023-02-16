@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 ;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body{ 
+            display: flex;
+            justify-content: center;
+        }
+        .sec-3 {
+            margin-top: 100px;
+            width : 70%;
+            background-color: #393E46;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            height: 600px;
+            border-radius:30px ;
+        }
+        .txt-box{
+            display: flex;
+            margin-top: 30px;
+            flex-direction: column;
+            justify-content: center;
+            width:40% ;
+            height:90%;
+            background-color:#FFFFFF ;
+            border-radius: 15px;
+            align-items:center;
+            
+        }
+        .txt-box p{
+            text-align: justify;
+            width: 70%;
+            padding-top: 10px;
+            font-size: 1.65rem;
+            line-height: 2.5rem;
+            
+        }
+        .txt-box a{
+            text-decoration: none;
+            background-color: #393e467d;
+            color: #FFFFFF;
+            display: inline-block;
+            font-size: 1.6rem;
+            padding:8px 30px;
+            border-radius: 7px;
+            margin:20px 0 10px;
+        }
+        .img-box{
+            width: 55%;
+            height: 90%;
+            margin-top: 30px;
+        }
+        .top-imgs{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .btm-imgs{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .btm-imgs img ,.top-imgs img{
+            max-width: 100%;
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <section dir="rtl" class="sec-3">
+        <div class="txt-box">
+            <p>به متنی آزمایشی و بی‌معنی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن با</p>
+            <a href="#">بیشتر !</a>
+        </div>
+        <div class="img-box">
+            <div class="top-imgs">
+                <img src="Img/dwaeqe.png">
+                <img src="Img/dwaeqe.png">
+            </div>
+            <div class="btm-imgs">
+                <img src="Img/dwaeqe.png">
+                <img src="Img/dwaeqe.png">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
