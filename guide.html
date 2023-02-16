@@ -21,7 +21,7 @@
         .guide {
             display: flex;
             justify-content: center;
-            margin-top: 100px;
+            /* margin-top: 100px; */
             padding: 10%;
         }
         .guide-tips {
@@ -30,6 +30,7 @@
             height: 400px;
             margin:0 2% 0 2%;
             border-radius: 20px;
+            position: relative;
         }
         .guide-header {
             background-color: #495057   ;
@@ -41,6 +42,17 @@
             font-size: 110%;
             text-align: center;
             padding: 17%;
+        }
+        .tips-right {
+            background-color: #353535;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            height: 310px;
+            width: 13%;
+            border-top-right-radius:20px ;
+            border-bottom-right-radius:20px ;
+            display: none;
         }
         .first-guide {
             width: 30%;
@@ -60,7 +72,7 @@
             border-radius: 20px;
             position: relative;
         }
-        .tips-right {
+        .first-tips-right {
             background-color: #353535;
             right: 0;
             top: 0;
@@ -75,7 +87,78 @@
             text-align: center;
             padding: 12% 20% 10% 10%
         }
+        @media (max-width:1200px) {
+            .first-guide-header {
+                height: 40px;
+            }
+            .guide-header {
+                height: 40px;
+            }
+            .guide-tips {
+                height: 300px;
+            }
+            .guide-tips-text {
+                font-size: 90%;
+                padding: 10%;
+            }
+            .first-guide {
+                height: 300px;
 
+            }
+            .first-tips-div {
+                height: 250px;
+            }
+            .first-tips-right {
+                height: 250px;
+            }
+            .guide-first-text {
+                font-size: 80%;
+                text-align: center;
+                padding: 10% 20% 10% 10%
+            }
+        }
+        @media (max-width:768px) {
+            .guide {
+                display: block;
+                margin: 0 10% 0 0 ;
+            }
+            /* .tips-right {
+                display: none;
+            } */
+            .first-guide-header {
+                display: none;
+            }
+            .guide-header {
+                display: none;
+            }
+            .first-guide {
+                width: 90%;
+                height: 250px;
+                margin: 5%  0 5% 0 ;
+
+            }
+            .guide-tips {
+                background-color: #f5f3f4;
+                width: 90%;
+                height: 250px;
+                margin:5% 0 5% 0;
+                border-radius: 20px;
+            }
+            .tips-right {
+                display: block;
+                height: 250px;
+                background-color: #495057;
+            }
+            .guide-first-text {
+                font-size: 100%;
+                text-align: center;
+                padding: 20% 20% 10% 10%;
+            }
+            .guide-tips-text {
+                font-size: 100%;
+                padding: 20% 20% 10% 10%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -87,7 +170,7 @@
                 <P class="guide-first-text">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد             
                 </P>
-                <div class="tips-right">
+                <div class="first-tips-right">
                 </div>
             </div>
         </div>  
@@ -97,6 +180,8 @@
             <P class="guide-tips-text">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد             
             </P>
+            <div class="tips-right">
+            </div>
         </div>
         <div class="guide-tips">
             <div class="guide-header">
@@ -104,6 +189,8 @@
             <P  class="guide-tips-text">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد             
             </P>
+            <div class="tips-right">
+            </div>
         </div>
     </section>
 </body>
