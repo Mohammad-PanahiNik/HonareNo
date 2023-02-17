@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        .footer-details {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: nazaninb;
             direction: rtl;
-            display: flex;
-            justify-content: space-between;
+            list-style: none;
+            text-decoration: none;
         }
-
+        .footer{
+            background-color:#222831 ;
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
         .social-media {
+            margin-right: 40px;
             display: flex;
-            justify-content: flex-start;
-            flex-direction: center;
-            margin: 20px;
-            padding: 20px 120px 20px 20px;
-            margin-bottom: -50px;
-            z-index: 2;
+            padding: 20px;
+            margin-top: -40px;
         }
-
         .social-media img {
             transition: .5s;
             width: 70px;
@@ -30,65 +34,89 @@
             cursor: pointer;
             filter: drop-shadow(2px 4px 4px #26282B);
         }
-
         .social-media img:hover {
             transition: .5s;
             transform: scale(1.15);
             transform: translateY(-5px);
         }
-
-        .information {
-            padding: 60px 100px 50px 200px;
-            margin: 0;
-            background-color: #353941;
-            background-image: linear-gradient(315deg, #353941 0%, #26282B 74%);
+        .main-f{
+            display: flex;
+            flex-wrap: wrap;
         }
-
-        .contect-list p {
-            line-height: 30px;
+        .footer-div{
+            padding: 30px 10%;
         }
-
-        .permiission {
-            margin: 20px 0 0 0;
-            padding: 100px 200px 100px 200px;
-            background: gray;
-            border-radius: 10px;
+        .box{
+            width: 20%;
+            margin: 0 auto;
+            padding:0 20px ;
         }
-
-        .services-rules-list li {
-            list-style: none;
+        .box ul li a {
+            color: #cfcfcf;
+            margin-top: 15px;
+            font-size: 1.3rem;
+            line-height: 1.7em;
         }
-
-        
-
-        .sevices-rules h3,
-        .content h3 {
-            font-size: 30px;
+        .cotact-div{
+            width: 30%;
+            margin-left:50px ;
+            color: #cfcfcf;
+            font-size: 1.3rem;
+            line-height: 1.7em;
+            margin: 0 auto;
+            padding:0 20px ;
+        }
+        .contact-h , .f-link-h , .category-h , .special-h{
+            color: rgb(255, 255, 255);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+        .copyright p span {
+            cursor: pointer;
             color: rgb(219, 219, 219);
-            padding: 15px 0 15px 0;
         }
-
-        .services-rules-list li a,
-        .contect-list p {
-            font-size: 18px;
-            color: rgb(219, 219, 219);
-            text-decoration: none;
-        }
-
         .copyright {
             display: flex;
             justify-content: center;
             flex-direction: center;
-            padding: 30px 0 0 0;
-            margin: 40px 0 0 0;
-            color: rgb(175, 175, 175);
-            font-size: 17px;
-            border-top: 2px solid gray;
+            margin-top:20px;
+            padding: 8px 0;
+            color: rgb(111, 110, 110);
+            font-size: 1.3rem;
+            border-top: 2px solid rgba(166, 166, 166, 0.305)
         }
-
-        .copyright p span {
-            cursor: pointer;
-            color: rgb(219, 219, 219);
+        @media screen and (max-width:1200px) {
+            .cotact-div{
+                width: 50%;
+                padding-right: 50px;
+                margin-bottom: 50px;
+            }
+            .box{
+                width: 50%;
+                padding-right: 50px;
+                margin-bottom: 50px;
+                
+            }
+            .footer-div{
+                padding: 30px 15%;
+            }
+        }
+        @media screen and (max-width:992px) {
+            .footer-div{
+                padding: 30px 15px;
+            }
+        }
+        @media screen and (max-width:576px) {
+            .cotact-div{
+                width: 100%;
+            }
+            .box{
+                width: 100%;
+                
+            }
+            .footer-div{
+                padding: 30px 3%;
+            } 
         }
     </style>
 </head>
@@ -100,38 +128,50 @@
             <img src="img/whatsapp.png" />
             <img src="img/gmail.png" />
         </div>
-        <div class="information">
-            <div class="footer-details">
-                <div class="content">
-                    <h3>راه های ارتباطی</h3>
-                    <div class="contect-list">
-                        <p>آدرس : تهرانپارس میدان پر,ین،<br>خیابان 196 شرقی،کوچه ملاِئی(200)،پلاک 204</p>
-                        <p>
-                            <Span>ساعت کاری :</Span>روزهای شنبه تا پنجشنبه از ساعت 9 الی 21</p>
-                        <p>شماره تماس : 09125933878-77390127</p>
-                    </div>
+        <div class="footer-div">
+            <div class="main-f">
+                <div class="cotact-div">
+                    <h3 class="contact-h">راه های ارتباطی</h3>
+                    <p>تهران،تهرانپارس شرقی،بلوار پروین،خیابان 196 شرقی،</br>کوچه 200 (ملائی)،بین 133 و 135،پلاک 204</p>
+                    <p>ساعات کاری : از شنبه تا پنجشنبه از ساعت 9 الی 21</p>
+                    <p>شماره تماس : </p>
+                    <p>77390127 - 09125933878</p>
                 </div>
-                <div class="sevices-rules">
-                    <h3>دسترسی سریع</h3>
-                    <div class="services-rules-list">
-                        <ul>
-                            <li><a href="#">صفحه اصلی</a></li>
-                            <li><a href="#">محصولات</a></li>
-                            <li><a href="#">fgfgfgfgs</a></li>
-                            <li><a href="#">sfdfdghfh</a></li>
-                            <li><a href="#">sadsdasdasd</a></li>
-                        </ul>
-                    </div>
+                <div class="box">
+                    <h3 class="category-h">دسته بندی محصولات</h3>
+                    <ul class="category-ul">
+                        <li><a href="#">بنر مناسبتی</a></li>
+                        <li><a href="#">ساخت مهر</a></li>
+                        <li><a href="#">چاپ روی اجسام</a></li>
+                        <li><a href="#">پلات و لمینت</a></li>
+                        <li><a href="#">چاپ دیجیتال</a></li>
+                        <li><a href="#">تابلو سازی</a></li>
+                    </ul>
                 </div>
-                <div class="permiissions">
-                    <div class="permiission"></div>
+                <div class="box">
+                    <h3 class="special-h">خدمات ویژه</h3>
+                    <ul class="special-services-ul">
+                        <li><a href="#">چاپ بنر مناسبتی</a></li>
+                        <li><a href="#">ساخت مهر لیزری</a></li>
+                        <li><a href="#">ساخت تابلو چلنیوم</a></li>
+                        <li><a href="#">چاپ روی ماگ</a></li>
+                        <li><a href="#">چاپ روی تیشرت</a></li>
+                    </ul>
                 </div>
-            </div>
-    
-            <div class="copyright">
-                <P>کلیه حقوق این سایت معلق به <span>هنر نو</span> میباشد</P>
+                <div class="box">
+                    <h3 class="f-link-h">دسترسی سریع</h3>
+                    <ul class="footer-link-ul">
+                        <li><a href="#">دسته بندی محصولات</a></li> 
+                        <li><a href="#">نحوه سفارش</a></li>
+                        <li><a href="#">درباره هنرنو</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+            </div>
+        </div>
+    <div class="copyright">
+        <P>کلیه حقوق این سایت معلق به <span>هنر نو</span> میباشد</P>
     </footer>
 </body>
 </html>
