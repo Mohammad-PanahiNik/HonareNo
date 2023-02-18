@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+        section{
+            padding: 100px 20%;
+        }
+        .product-head{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color:#393E46 ;
+            overflow: hidden;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        .product-head a{
+            color: #ededed;
+            padding: 20px;
+            font-size: 1.5rem;
+            position: relative;
+        }
+        .product-head a::before ,.product-head a::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #ededed;
+            transform: scale(0);
+        }
+        .product-head a::after{
+            left: 0;
+        }
+        .product-head a::before{
+            right: 0;
+        }
+        .product-head a:hover{
+            color: #ffffff;
+        }
+        .product-head a:hover::before ,.product-head a:hover::after{
+            transition: all 0.3s;
+            transform: scale(1);
+        }
+        .imgs-box{
+            background-color: #dddddd;
+            display: flex;
+            flex-wrap:wrap ;
+            justify-content: space-around;
+            padding:10px 0 10px 0;
+            text-align: center;
+        }
+        .imgs-box img {
+            max-width: 30%;
+            margin:10px 0 10px 0;
+            height: auto;
+            border: #393E46 solid 2px;
+        }
+    </style>
+</head>
+<body>
+    <section class="products-img-sec">
+        <div class="product-head">
+            <a href="#">بنر تولد</a>
+            <a href="#">بنر تسلیت</a>
+            <a href="#">بنر کربلایی</a>
+            <a href="#">اعلامیه ترحیم</a>
+        </div>
+        <div class="imgs-box">
+            <img src="img/product-images/banner-tasliat/tasliati- 1-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 10M-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 11-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 12P-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 13-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 14F-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 15M-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 16-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 17-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 18P-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 19P-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 2-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 20-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 21M-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 22-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 23-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 24-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 25-min.jpg">
+
+            <img src="img/product-images/banner-tasliat/tasliati- 26-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 29-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 291-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 3-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 30-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 31-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 32-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 33-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 34M-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 35P-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 36-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 37-min.jpg">
+
+            <img src="img/product-images/banner-tasliat/tasliati- 38P-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 40-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 41-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 43-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 4P-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 5M-min.jpg">
+            
+            <img src="img/product-images/banner-tasliat/tasliati- 6-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 7P-min.jpg">
+            <img src="img/product-images/banner-tasliat/tasliati- 9-min.jpg">
+        </div>
+    </section>
+    
+    
+</body>
+</html>
