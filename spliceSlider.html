@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }   
+        .simProductsSec::after{
+            content: 'محصولات مرتبط';
+            position: absolute;
+            color: white;
+            text-align: center;
+            padding: 5px 45px;
+            background-color: black;
+            z-index: 99999;
+            border-radius: 12px;
+            right: 0;
+            top: -12px;
+        }
+        .simProductsSec{
+            position: relative;
+            width: 1000px;
+            scrollbar-arrow-color: red;
+            margin: 20px auto;
+        }
+        .simProducts{
+            width: 1000px;
+            overflow-x: scroll;
+            position: relative;
+        }
+        .pSlider{
+            background-color:#222831 ;
+            position: relative;
+            width: 1140px;
+            padding: 15px;
+            border-radius: 12px;
+            display: flex;
+        }
+        .simProductsBtn{
+            font-size: 2rem;
+            font-weight: bolder;
+            background-color: #00000050;
+            padding: 5px 15px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        .sllideBox{
+            margin-left: 5px;
+            text-align: center;
+            border-radius: 12px;
+            width: 400px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .slideImgs{
+            margin: 0px auto;
+            width: 100%;
+            height: 200px;
+        }
+        .slideImgs img{
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            user-select: none;
+        }
+        .slideDesc{
+            color: white;
+            background-color: gray;
+            user-select: none;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            padding: 10px;
+        }
+        .mobileSimP{
+            display: none;
+        }
+        @media screen and (max-width:1200px) {
+            .simProductsSec{
+                width: 600px;
+            }
+            .simProducts{
+                width: 600px;
+            }
+        }
+        @media screen and (max-width:768px){
+            .simProductsSec{
+                width: auto;
+            }
+            .simProductsSec::after{
+                display: none;
+            }
+            .simProducts{
+                border-radius: 0;
+                width: auto;
+            }
+            .mobileSimP{
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+            }
+            .sllideBox{
+                width: 250px;
+            }
+            .pSlider{
+                width: 1000px;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="simProductsSec">
+        <div class="mobileSimP">محصولات مرتبط</div>
+        <div class="simProducts">
+                <div class="pSlider">
+                    <div class="sllideBox">
+                        <div class="slideImgs">
+                                <img src="./Img/dwaeqe.png">
+                        </div>
+                        <div class="slideDesc">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="sllideBox">
+                        <div class="slideImgs">
+                                <img src="./Img/dwaeqe.png">
+                        </div>
+                        <div class="slideDesc">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="sllideBox">
+                        <div class="slideImgs">
+                                <img src="./Img/dwaeqe.png">
+                        </div>
+                        <div class="slideDesc">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="sllideBox">
+                        <div class="slideImgs">
+                                <img src="./Img/dwaeqe.png">
+                        </div>
+                        <div class="slideDesc">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>      
+        </div>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>
