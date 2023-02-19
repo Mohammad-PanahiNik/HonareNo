@@ -14,19 +14,22 @@
             list-style: none;
         }
         section{
-            padding: 100px 20%;
+            margin: 0 auto;
+            width: 80%;
         }
         .product-head{
             display: flex;
+            flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-around;
-            align-items: center;
             background-color:#393E46 ;
             overflow: hidden;
             border-top-right-radius: 15px;
             border-top-left-radius: 15px;
         }
         .product-head a{
+            text-align: center;
+            width: 20%;
             color: #ededed;
             padding: 20px;
             font-size: 1.5rem;
@@ -40,6 +43,7 @@
             height: 100%;
             background-color: #ededed;
             transform: scale(0);
+            transition: all 0.3s;
         }
         .product-head a::after{
             left: 0;
@@ -51,7 +55,6 @@
             color: #ffffff;
         }
         .product-head a:hover::before ,.product-head a:hover::after{
-            transition: all 0.3s;
             transform: scale(1);
         }
         .imgs-box{
@@ -68,6 +71,45 @@
             height: auto;
             border: #393E46 solid 2px;
         }
+        .banner-tavalod , .banner-karbalaii , .elamie-tarhim{
+            display: none;
+        }
+        
+        @media screen and (max-width:1200px) {
+            section{
+                margin: 0 auto;
+            }
+            .product-head a{
+                font-size: 1.3rem;
+                padding: 20px 5px;
+            }
+        }
+        @media screen and (max-width:992px) {
+            .imgs-box img {
+                max-width: 45%;
+            }
+        }
+        @media screen and (max-width:768px) {
+            section{
+                width: auto;
+            }
+            .product-head a{
+                width:100%;
+                outline: dashed gray 1px;
+            }
+            .product-head{
+                border-radius: 0;
+            }
+            .product-head a::before ,.product-head a::after{
+                display: none;
+            }
+        }
+        @media screen and (max-width:568px) {
+            .imgs-box img {
+                max-width: 90%;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -78,61 +120,88 @@
             <a href="#">بنر کربلایی</a>
             <a href="#">اعلامیه ترحیم</a>
         </div>
-        <div class="imgs-box">
+        <div class="imgs-box banner-tasliat">
             <img src="img/product-images/banner-tasliat/tasliati- 1-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 10M-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 11-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 12P-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 13-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 14F-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 15M-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 16-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 17-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 18P-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 19P-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 2-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 20-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 21M-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 22-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 23-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 24-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 25-min.jpg">
-
             <img src="img/product-images/banner-tasliat/tasliati- 26-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 29-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 291-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 3-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 30-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 31-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 32-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 33-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 34M-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 35P-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 36-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 37-min.jpg">
-
             <img src="img/product-images/banner-tasliat/tasliati- 38P-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 40-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 41-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 43-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 4P-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 5M-min.jpg">
-            
             <img src="img/product-images/banner-tasliat/tasliati- 6-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 7P-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 9-min.jpg">
         </div>
+        <div class="imgs-box banner-tavalod">
+            <img src="img/product-images/banner-tavalod/t-01-compressed.jpg">
+            <img src="img/product-images/banner-tavalod/t-02.jpg">
+            <img src="img/product-images/banner-tavalod/t-03.jpg">
+            <img src="img/product-images/banner-tavalod/t-04.jpg">
+            <img src="img/product-images/banner-tavalod/t-05.jpg">
+            <img src="img/product-images/banner-tavalod/t-06.jpg">
+            <img src="img/product-images/banner-tavalod/t-07.jpg">
+            <img src="img/product-images/banner-tavalod/t-08.jpg">
+            <img src="img/product-images/banner-tavalod/t-09.jpg">
+            <img src="img/product-images/banner-tavalod/t-10.jpg">
+        </div>
+        <div class="imgs-box banner-karbalaii">
+            <img src="img/product-images/banner-karbalaii/karbalaii-54.jpg">
+            <img src="img/product-images/banner-karbalaii/karbalaii-56.jpg">
+            <img src="img/product-images/banner-karbalaii/karbalaii-58.jpg">
+            <img src="img/product-images/banner-karbalaii/karbalii-57.jpg">
+            
+        </div>
+        <div class="imgs-box elamie-tarhim">
+            <img src="img/product-images/elamie-tarhim/e-01.jpg">
+            <img src="img/product-images/elamie-tarhim/e-02.jpg">
+            <img src="img/product-images/elamie-tarhim/e-03.jpg">
+            <img src="img/product-images/elamie-tarhim/e-04.jpg">
+            <img src="img/product-images/elamie-tarhim/e-05.jpg">
+            <img src="img/product-images/elamie-tarhim/e-06.jpg">
+            <img src="img/product-images/elamie-tarhim/e-07.jpg">
+            <img src="img/product-images/elamie-tarhim/e-08.jpg">
+            <img src="img/product-images/elamie-tarhim/e-09.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-10.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-11.jpg">
+            <img src="img/product-images/elamie-tarhim/e-12.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-13.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-15.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-16.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-17.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-19.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-20.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-21.jpg">
+            <img src="img/product-images/elamie-tarhim/ea-22.jpg">
+        </div>
     </section>
-    
-    
 </body>
 </html>
