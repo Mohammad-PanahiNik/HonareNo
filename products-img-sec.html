@@ -120,7 +120,7 @@
             <a id="btn-karbalaii">بنر کربلایی</a>
             <a id="btn-tarhim">اعلامیه ترحیم</a>
         </div>
-        <div class="imgs-box banner-tasliat">
+        <div class="imgs-box banner-tasliat" id="banner-tasliat">
             <img src="img/product-images/banner-tasliat/tasliati- 1-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 10M-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 11-min.jpg">
@@ -161,7 +161,7 @@
             <img src="img/product-images/banner-tasliat/tasliati- 7P-min.jpg">
             <img src="img/product-images/banner-tasliat/tasliati- 9-min.jpg">
         </div>
-        <div class="imgs-box banner-tavalod">
+        <div class="imgs-box banner-tavalod" id="banner-tavalod">
             <img src="img/product-images/banner-tavalod/t-01-compressed.jpg">
             <img src="img/product-images/banner-tavalod/t-02.jpg">
             <img src="img/product-images/banner-tavalod/t-03.jpg">
@@ -173,14 +173,13 @@
             <img src="img/product-images/banner-tavalod/t-09.jpg">
             <img src="img/product-images/banner-tavalod/t-10.jpg">
         </div>
-        <div class="imgs-box banner-karbalaii">
+        <div class="imgs-box banner-karbalaii" id="banner-karbalaii">
             <img src="img/product-images/banner-karbalaii/karbalaii-54.jpg">
             <img src="img/product-images/banner-karbalaii/karbalaii-56.jpg">
             <img src="img/product-images/banner-karbalaii/karbalaii-58.jpg">
             <img src="img/product-images/banner-karbalaii/karbalii-57.jpg">
-            
         </div>
-        <div class="imgs-box elamie-tarhim">
+        <div class="imgs-box elamie-tarhim" id="elamie-tarhim">
             <img src="img/product-images/elamie-tarhim/e-01-min.jpg">
             <img src="img/product-images/elamie-tarhim/e-02-min.jpg">
             <img src="img/product-images/elamie-tarhim/e-03-min.jpg">
@@ -204,5 +203,50 @@
             <img src="img/product-images/elamie-tarhim/e-21-min.jpg">
         </div>
     </section>
+    
+    <!-- <script>
+        var BtnTavalod = document.getElementById('btn-tavalod')
+        var BtnTasliat = document.getElementById('btn-tasliat')
+        var BtnKarbalaii = document.getElementById('btn-karbalaii')
+        var BtnTarhim = document.getElementById('btn-tarhim')
+
+        var ImgBoxTavalod = document.getElementsByClassName('banner-tavalod')
+        var ImgBoxTasliat = document.getElementsByClassName('banner-tasliat')
+        var ImgBoxKarbalaii = document.getElementsByClassName('banner-karbalaii')
+        var ImgBoxTarhim = document.getElementsByClassName('elamie-tarhim')
+
+        BtnTavalod.addEventListener('click',
+            () => {
+                ImgBoxTavalod.style.display = 'flex'
+                ImgBoxTasliat.style.display = 'none'
+                ImgBoxKarbalaii.style.display = 'none'
+                ImgBoxTarhim.style.display = 'none'
+            }
+        )
+        BtnTasliat.addEventListener('click',
+            () => {
+                ImgBoxTavalod.style.display = 'none'
+                ImgBoxTasliat.style.display = 'flex'
+                ImgBoxKarbalaii.style.display = 'none'
+                ImgBoxTarhim.style.display = 'none'
+            }
+        )
+        BtnKarbalaii.addEventListener('click',
+            () => {
+                ImgBoxTavalod.style.display = 'none'
+                ImgBoxTasliat.style.display = 'none'
+                ImgBoxKarbalaii.style.display = 'flex'
+                ImgBoxTarhim.style.display = 'none'
+            }
+        )
+        BtnTarhim.addEventListener('click',
+            () => {
+                ImgBoxTavalod.style.display = 'none'
+                ImgBoxTasliat.style.display = 'none'
+                ImgBoxKarbalaii.style.display = 'none'
+                ImgBoxTarhim.style.display = 'flex'
+            }
+        )
+    </script> -->
 </body>
 </html>
