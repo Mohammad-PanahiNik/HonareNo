@@ -15,7 +15,7 @@
             background-color: #222831;
         }
         ::-webkit-scrollbar-thumb{
-            background-color: gray;
+            background-color: rgb(125, 120, 120);
             border-radius: 8px;
         }
         .simProductsSec::after{
@@ -69,6 +69,7 @@
             width: 400px;
             padding: 5px;
             cursor: pointer;
+            transition: all ease 0.5s;
         }
         .slideImgs{
             margin: 0px auto;
@@ -128,7 +129,7 @@
         }
     </style>
 </head>
-<body>
+<body onresize="responsive()">
     <section class="simProductsSec">
         <div class="mobileSimP">محصولات مرتبط</div>
         <div class="simProducts">
@@ -138,7 +139,7 @@
                                 <img src="./Img/dwaeqe.png">
                         </div>
                         <div class="slideDesc">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur.TEST</p>
                         </div>
                     </div>
                     <div class="sllideBox">
