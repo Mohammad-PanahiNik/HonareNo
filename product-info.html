@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            direction: rtl;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .product-info {
+            display: flex;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            padding: 8%;
+        }
+        .product-Summary {
+            width: 90%;
+            padding: 10%;
+        }
+        .product-info {
+            width: 70%;
+        }
+        .product-Summary p {
+            font-size: 110%;
+            padding: 5% 0;
+        }
+        .product-Summary button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            background-color: #393E46;
+            color: white;
+            font-size: 150%;
+            padding: 2% 8%;
+            border-radius: 5px;
+        }
+        .product-info img {
+            width: 150%;
+            padding: 50% 0 0 0;
+        }
+        @media (max-width:1200px)  {
+            .product-Summary p {
+                font-size: 90%;
+            }
+        }
+        @media (max-width:992px) {
+            .product-Summary p {
+                font-size: 80%;
+            }
+        }
+        @media (max-width:768px) {
+            .product-Summary p {
+                font-size: 70%;
+            }
+            .product-Summary {
+                padding: 5%;
+            }
+            .product-info img {
+                padding: 25% 0 0 0;
+            }
+        }
+        @media (max-width:576px) {
+
+            .product-info {
+                flex-wrap:wrap-reverse;
+            }
+            .product-Summary {
+                display: flex;
+                flex-wrap:wrap;
+                justify-content: center;
+                text-align: center;
+            }
+            .product-Summary p {
+                font-size: 80%;
+            }
+            .product-info img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="product-info container">
+        <div class="product-Summary">
+            <h2>کالای فلان</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+            <button>بیشتر</button>
+        </div>
+        <div class="product-image">
+            <img src="img/dwaeqe.png"/>
+        </div>
+    </section>
+</body>
+</html>
