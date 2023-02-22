@@ -28,6 +28,7 @@
             border-top-left-radius: 15px;
         }
         .product-head a{
+            cursor: pointer;
             text-align: center;
             width: 20%;
             color: #ededed;
@@ -201,50 +202,39 @@
             <img src="img/product-images/elamie-tarhim/e-21-min.jpg">
         </div>
     </section>
-    
-    <!-- <script>
-        var BtnTavalod = document.getElementById('btn-tavalod')
-        var BtnTasliat = document.getElementById('btn-tasliat')
-        var BtnKarbalaii = document.getElementById('btn-karbalaii')
-        var BtnTarhim = document.getElementById('btn-tarhim')
-
-        var ImgBoxTavalod = document.getElementsByClassName('banner-tavalod')
-        var ImgBoxTasliat = document.getElementsByClassName('banner-tasliat')
-        var ImgBoxKarbalaii = document.getElementsByClassName('banner-karbalaii')
-        var ImgBoxTarhim = document.getElementsByClassName('elamie-tarhim')
-
-        BtnTavalod.addEventListener('click',
-            () => {
-                ImgBoxTavalod.style.display = 'flex'
-                ImgBoxTasliat.style.display = 'none'
-                ImgBoxKarbalaii.style.display = 'none'
-                ImgBoxTarhim.style.display = 'none'
-            }
-        )
-        BtnTasliat.addEventListener('click',
-            () => {
-                ImgBoxTavalod.style.display = 'none'
-                ImgBoxTasliat.style.display = 'flex'
-                ImgBoxKarbalaii.style.display = 'none'
-                ImgBoxTarhim.style.display = 'none'
-            }
-        )
-        BtnKarbalaii.addEventListener('click',
-            () => {
-                ImgBoxTavalod.style.display = 'none'
-                ImgBoxTasliat.style.display = 'none'
-                ImgBoxKarbalaii.style.display = 'flex'
-                ImgBoxTarhim.style.display = 'none'
-            }
-        )
-        BtnTarhim.addEventListener('click',
-            () => {
-                ImgBoxTavalod.style.display = 'none'
-                ImgBoxTasliat.style.display = 'none'
-                ImgBoxKarbalaii.style.display = 'none'
-                ImgBoxTarhim.style.display = 'flex'
-            }
-        )
-    </script> -->
+    <script>
+        const btnTavalod = document.querySelector('#btn-tavalod')
+        const btnKarbalaii = document.querySelector('#btn-karbalaii')
+        const btnTasliat = document.querySelector('#btn-tasliat')
+        const btnTarhim = document.querySelector('#btn-tarhim')
+        const bannerTasliat = document.querySelector('#banner-tasliat')
+        const bannerTavalod = document.querySelector('#banner-tavalod')
+        const elamieTarhim = document.querySelector('#elamie-tarhim')
+        const bannerKarbalaii = document.querySelector('#banner-karbalaii')
+        btnTavalod.addEventListener('click' , ()=>{
+            bannerTasliat.style.display = 'none'
+            elamieTarhim.style.display = 'none'
+            bannerKarbalaii.style.display = 'none'
+            bannerTavalod.style.display = 'block'
+        })
+        btnTasliat.addEventListener('click' , ()=>{
+            elamieTarhim.style.display = 'none'
+            bannerKarbalaii.style.display = 'none'
+            bannerTavalod.style.display = 'none'
+            bannerTasliat.style.display = 'block'
+        })
+        btnTarhim.addEventListener('click' , ()=>{
+            bannerTasliat.style.display = 'none'
+            bannerKarbalaii.style.display = 'none'
+            bannerTavalod.style.display = 'none'
+            elamieTarhim.style.display = 'block'
+        })
+        btnKarbalaii.addEventListener('click' , ()=>{
+            bannerTasliat.style.display = 'none'
+            elamieTarhim.style.display = 'none'
+            bannerTavalod.style.display = 'none'
+            bannerKarbalaii.style.display = 'block'
+        })
+    </script>
 </body>
 </html>
